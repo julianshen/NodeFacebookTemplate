@@ -12,7 +12,6 @@ var app = express.createServer(
 
 app.set('view engine', 'ejs');
 app.get('/', function(req,res) {
-  console.log(req.cookies);
   res.render('index.ejs', {
         layout:    false,
         req:       req,
