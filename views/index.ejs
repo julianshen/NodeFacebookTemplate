@@ -2,6 +2,53 @@
 <head>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '290247884332061', // App ID
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+
+    // Additional initialization code here
+    FB.Event.subscribe('auth.authResponseChange', function(response) {
+          console.log('The status of the session is: ' + response.status);
+          FB.api("/me?fields=id,name", function(mydata) {
+                  //console.log(mydata);
+                  var uContainer = document.getElementById('faceuser');
+                  if(uContainer) {
+                        uContainer.innerHTML = '<a href="#"><div><img src="http://graph.facebook.com/'+mydata.id+'/picture" width="30px" height="30px"/> ' + mydata.name + '</div></a>';
+                  } else {
+                          console.log('cannot show user');
+                  }
+          });
+        });
+  };
+
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+
+
+  function loginFB() {
+          if(FB) {
+                  FB.login(function(response) {
+                           // handle the response
+                  }, {scope: 'offline_access' });
+          }
+  }
+</script>
+
 Hello !
+<div id="faceuser"><a href="#" onclick="loginFB();return false;">Login</a></div>
 </body>
 </html>
