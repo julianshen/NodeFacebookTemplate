@@ -6,7 +6,8 @@
 
   "dependencies": {
     "express":   "",
-    "ejs": ""
+    "ejs": "",
+    "faceplate": ""
   },
 
   "engines": {
