@@ -11,16 +11,31 @@ function getStandardFeeds(feed, cb, regionID) {
 
 }
 
-function videos(querys, cb) {
+function videos(querys, cb, start) {
    var videosURL = baseURL + 'videos';
    var queryStr = '';
 
-   querys.forEach(function(key) {
+   Object.keys(querys).forEach(function(key) {
        queryStr += key + '=' +querys[key] + '&';
    });
+   queryStr += 'v=2&alt=jsonc';
+   if(start) queryStr += '&start-index='+start;
 
    var request = restler.get(videosURL, {query: queryStr});
    
+   request.on('complete', function(result) {
+       cb(result.data ? result.data:result);
+   });
+}
+
+function related(video_id, cb, start) {
+   var videoURL = baseURL + 'videos/' + video_id +'/related';
+
+   var queryStr = 'v=2&alt=jsonc';
+   if(start) queryStr += '&start-index='+start;
+
+   var request = restler.get(videoURL, {query: queryStr});
+
    request.on('complete', function(result) {
        cb(result.data ? result.data:result);
    });
@@ -36,5 +51,10 @@ standardFeedNames.forEach(function(key) {
     };
 }); 
 
-videos({author:'SonyPictures', q:'trailer'}, function(data) {
-});
+var simpleYoutubeApi = {
+    standardfeeds : standardFeeds,
+    videos : videos,
+    related : related
+};
+
+exports.simple = simpleYoutubeApi;

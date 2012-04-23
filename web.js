@@ -1,4 +1,5 @@
 require('ejs');
+var Youtube = require('./youtube').simple;
 var express = require('express');
 
 var app = express.createServer(
@@ -21,11 +22,14 @@ app.set('view engine', 'ejs');
 //Routing
 //Index
 app.get('/', function(req,res) {
-  res.render('index.ejs', {
+  Youtube.videos({author: 'SonyPictures', q:'trailer'},function(data) {
+      res.render('index.ejs', {
         layout:    'layouts/facebook_common.ejs',
         req:       req,
         app:       app,
+        trailers:  data
       });
+  });
 });
 
 //Facebook channel files
@@ -41,6 +45,12 @@ app.get('/_channel', function(req, res) {
 app.get('/__events', function(req, res) {
   req.facebook.get('/me/events', { limit: 4 }, function(events) {
     res.send('events: ' + require('util').inspect(events));
+  });
+});
+
+app.get('/__youtube_to', function(req, res) {
+  Youtube.videos({author: 'SonyPictures', q:'trailer'},function(data) {
+    res.send(data);
   });
 });
 
