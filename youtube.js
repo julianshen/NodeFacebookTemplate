@@ -13,7 +13,7 @@ function __makeQueryStr(querys) {
    var queryStr = '';
 
    Object.keys(querys).forEach(function(key) {
-       queryStr += key + '=' +querys[key] + '&';
+       queryStr += key + '=' + escape(querys[key]) + '&';
    });
 
    queryStr += 'v=2&alt=jsonc';

@@ -38,7 +38,7 @@ Object.keys(Youtube.standardfeeds).forEach(function(func_name) {
 
 //Test other APIs
 //Test video search
-Youtube.videos({q: 'trailer'}, function(data) {
+Youtube.videos({q: 'Spider man'}, function(data) {
    console.log('Test video search : [OK]');
    if(data.totalItems && data.totalItems > 0) {
        //Test related
