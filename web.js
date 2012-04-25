@@ -5,7 +5,7 @@ var express = require('express');
 var app = express.createServer(
   express.logger(),
   express.static(__dirname + '/public'),
-  express.bodyParser(),
+  express.bodyParser({uploadDir: __dirname + '/uploads'}),
   express.cookieParser(),
   // set this to a secret value to encrypt session cookies
   express.session({ secret: process.env.SESSION_SECRET || 'mysecret11' }),
@@ -41,6 +41,18 @@ app.get('/_channel', function(req, res) {
   res.send('<script src="//connect.facebook.net/en_US/all.js"></script>');
 });
 
+//File upload
+app.get('/upload', function(req, res) {
+  res.render('upload.ejs', {
+        layout:    'layouts/facebook_common_mobile.ejs',
+        req:       req,
+        app:       app,
+      });
+});
+
+app.post('/_upload', function(req, res) {
+  res.send('{}');
+});
 //For test
 app.get('/__events', function(req, res) {
   req.facebook.get('/me/events', { limit: 4 }, function(events) {
