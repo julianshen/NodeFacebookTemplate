@@ -1,0 +1,421 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'i' ]
+info using npm@1.0.106
+info using node@v0.6.11
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/julianshen/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+silly testEngine { name: 'eventhighlight',
+silly testEngine   version: '0.0.1',
+silly testEngine   description: 'Version 1 for event highlight',
+silly testEngine   dependencies: 
+silly testEngine    { express: '',
+silly testEngine      ejs: '',
+silly testEngine      faceplate: '',
+silly testEngine      restler: '',
+silly testEngine      sax: '',
+silly testEngine      transcoding: '' },
+silly testEngine   engines: { node: '0.6.x' },
+silly testEngine   _id: 'eventhighlight@0.0.1',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/julianshen/dev/eventhighlight/package.json
+verbose loadDefaults eventhighlight@0.0.1
+verbose where, deps [ '/Users/julianshen/dev/eventhighlight',
+verbose where, deps   [ 'express', 'ejs', 'faceplate', 'restler', 'sax', 'transcoding' ] ]
+verbose from cache /Users/julianshen/dev/eventhighlight/package.json
+info preinstall eventhighlight@0.0.1
+silly testEngine { name: 'express',
+silly testEngine   description: 'Sinatra inspired web development framework',
+silly testEngine   version: '2.5.9',
+silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly testEngine      { name: 'Aaron Heckmann',
+silly testEngine        email: 'aaron.heckmann+github@gmail.com' },
+silly testEngine      { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly testEngine      { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly testEngine   dependencies: { connect: '1.x', mime: '1.2.4', qs: '0.4.x', mkdirp: '0.3.0' },
+silly testEngine   devDependencies: 
+silly testEngine    { 'connect-form': '0.2.1',
+silly testEngine      ejs: '0.4.2',
+silly testEngine      expresso: '0.9.2',
+silly testEngine      hamljs: '0.6.x',
+silly testEngine      jade: '0.16.2',
+silly testEngine      stylus: '0.13.0',
+silly testEngine      should: '0.3.2',
+silly testEngine      'express-messages': '0.0.2',
+silly testEngine      'node-markdown': '>= 0.0.1',
+silly testEngine      'connect-redis': '>= 0.0.1' },
+silly testEngine   keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
+silly testEngine   repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly testEngine   main: 'index',
+silly testEngine   bin: { express: './bin/express' },
+silly testEngine   scripts: { test: 'make test', prepublish: 'npm prune' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.7.0' },
+silly testEngine   _id: 'express@2.5.9',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/express/package.json
+verbose loadDefaults express@2.5.9
+silly testEngine { name: 'faceplate',
+silly testEngine   version: '0.0.4',
+silly testEngine   author: { name: 'Heroku' },
+silly testEngine   homepage: 'https://github.com/heroku/faceplate',
+silly testEngine   description: 'Wrapper for Facebook authentication and API',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/heroku/faceplate.git' },
+silly testEngine   dependencies: { b64url: '1.0.3', restler: '2.0.0' },
+silly testEngine   _id: 'faceplate@0.0.4',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/faceplate/package.json
+verbose loadDefaults faceplate@0.0.4
+silly testEngine { name: 'restler',
+silly testEngine   version: '2.0.0',
+silly testEngine   description: 'An HTTP client library for node.js',
+silly testEngine   contributors: [ { name: 'Dan Webb', email: 'dan@danwebb.net' } ],
+silly testEngine   homepage: 'https://github.com/danwrong/restler',
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   main: './lib/restler',
+silly testEngine   engines: { node: '>= 0.6.x' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: 
+silly testEngine    { nodeunit: '>=0.5.0',
+silly testEngine      xml2js: '>=0.1.0',
+silly testEngine      yaml: '>=0.2.0',
+silly testEngine      iconv: '>=1.0.0' },
+silly testEngine   _id: 'restler@2.0.0',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/restler/package.json
+verbose loadDefaults restler@2.0.0
+silly testEngine { name: 'ejs',
+silly testEngine   description: 'Embedded JavaScript templates',
+silly testEngine   version: '0.7.1',
+silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly testEngine   keywords: [ 'template', 'engine', 'ejs' ],
+silly testEngine   devDependencies: { mocha: '*' },
+silly testEngine   main: './lib/ejs.js',
+silly testEngine   _id: 'ejs@0.7.1',
+silly testEngine   dependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/ejs/package.json
+verbose loadDefaults ejs@0.7.1
+silly testEngine { name: 'sax',
+silly testEngine   description: 'An evented streaming XML parser in JavaScript',
+silly testEngine   author: 
+silly testEngine    { name: 'Isaac Z. Schlueter',
+silly testEngine      email: 'i@izs.me',
+silly testEngine      url: 'http://blog.izs.me/' },
+silly testEngine   version: '0.4.0',
+silly testEngine   main: 'lib/sax.js',
+silly testEngine   license: 
+silly testEngine    { type: 'MIT',
+silly testEngine      url: 'https://raw.github.com/isaacs/sax-js/master/LICENSE' },
+silly testEngine   scripts: { test: 'node test/index.js' },
+silly testEngine   repository: { type: 'git', url: 'git://github.com/isaacs/sax-js.git' },
+silly testEngine   _id: 'sax@0.4.0',
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+silly testEngine      { name: 'Stein Martin Hustad', email: 'stein@hustad.com' },
+silly testEngine      { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+silly testEngine      { name: 'Laurie Harper', email: 'laurie@holoweb.net' },
+silly testEngine      { name: 'Jann Horn', email: 'jann@Jann-PC.fritz.box' },
+silly testEngine      { name: 'Elijah Insua', email: 'tmpvar@gmail.com' },
+silly testEngine      { name: 'Henry Rawas', email: 'henryr@schakra.com' },
+silly testEngine      { name: 'Justin Makeig', email: 'jmpublic@makeig.com' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/sax/package.json
+verbose loadDefaults sax@0.4.0
+verbose from cache /Users/julianshen/dev/eventhighlight/package.json
+verbose into /Users/julianshen/dev/eventhighlight [ 'express@',
+verbose into /Users/julianshen/dev/eventhighlight   'ejs@',
+verbose into /Users/julianshen/dev/eventhighlight   'faceplate@',
+verbose into /Users/julianshen/dev/eventhighlight   'restler@',
+verbose into /Users/julianshen/dev/eventhighlight   'sax@',
+verbose into /Users/julianshen/dev/eventhighlight   'transcoding@' ]
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/ejs/package.json
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/express/package.json
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/faceplate/package.json
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/restler/package.json
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/sax/package.json
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping faceplate@
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping restler@
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping sax@
+verbose cache add transcoding@
+verbose cache add [ 'transcoding@', null ]
+silly cache add: name, spec, args [ undefined, 'transcoding@', [ 'transcoding@', null ] ]
+verbose parsed url { pathname: 'transcoding@',
+verbose parsed url   path: 'transcoding@',
+verbose parsed url   href: 'transcoding@' }
+silly cache add: name, spec, args [ 'transcoding', '', [ 'transcoding', '' ] ]
+verbose parsed url { href: '' }
+info addNamed [ 'transcoding', '' ]
+verbose addNamed [ null, '' ]
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping express@
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping ejs@
+verbose GET transcoding
+verbose raw, before any munging transcoding
+verbose url resolving [ 'https://registry.npmjs.org/', './transcoding' ]
+verbose url resolved https://registry.npmjs.org/transcoding
+verbose etag "3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"',
+silly get cb     date: 'Thu, 26 Apr 2012 09:41:27 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag transcoding from cache
+verbose GET transcoding/0.0.1
+verbose raw, before any munging transcoding/0.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './transcoding/0.0.1' ]
+verbose url resolved https://registry.npmjs.org/transcoding/0.0.1
+verbose etag "3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"',
+silly get cb     date: 'Thu, 26 Apr 2012 09:41:29 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag transcoding/0.0.1 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0g-v83.6.6.20-darwin-x64-11.3.0',
+verbose bin dist   { shasum: '6ca5818952da67e994cb1b8a00c8cda8d31d792a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/transcoding/-/transcoding-0.0.1.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/julianshen/.npm/transcoding/0.0.1/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'transcoding',
+silly testEngine   description: 'Media transcoding and streaming support',
+silly testEngine   version: '0.0.1',
+silly testEngine   author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
+silly testEngine   contributors: [],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/benvanik/node-transcoding.git' },
+silly testEngine   keywords: 
+silly testEngine    [ 'audio',
+silly testEngine      'video',
+silly testEngine      'media',
+silly testEngine      'transcode',
+silly testEngine      'transcoding',
+silly testEngine      'remux',
+silly testEngine      'streaming' ],
+silly testEngine   directories: { lib: './lib/transcoding' },
+silly testEngine   main: './lib/transcoding',
+silly testEngine   bin: { transcode: './examples/transcode.js' },
+silly testEngine   dependencies: { tav: '0.1.0' },
+silly testEngine   scripts: 
+silly testEngine    { preinstall: 'node-waf configure && node-waf build',
+silly testEngine      preuninstall: 'rm -rf build/*' },
+silly testEngine   engines: { node: '>= 0.6.x' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'transcoding@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/.npm/transcoding/0.0.1/package/package.json
+verbose loadDefaults transcoding@0.0.1
+silly resolved [ { name: 'transcoding',
+silly resolved     description: 'Media transcoding and streaming support',
+silly resolved     version: '0.0.1',
+silly resolved     author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
+silly resolved     contributors: [],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/benvanik/node-transcoding.git' },
+silly resolved     keywords: 
+silly resolved      [ 'audio',
+silly resolved        'video',
+silly resolved        'media',
+silly resolved        'transcode',
+silly resolved        'transcoding',
+silly resolved        'remux',
+silly resolved        'streaming' ],
+silly resolved     directories: { lib: './lib/transcoding' },
+silly resolved     main: './lib/transcoding',
+silly resolved     bin: { transcode: './examples/transcode.js' },
+silly resolved     dependencies: { tav: '0.1.0' },
+silly resolved     scripts: 
+silly resolved      { preinstall: 'node-waf configure && node-waf build',
+silly resolved        preuninstall: 'rm -rf build/*' },
+silly resolved     engines: { node: '>= 0.6.x' },
+silly resolved     devDependencies: {},
+silly resolved     _id: 'transcoding@0.0.1',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.106',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true } ]
+info into /Users/julianshen/dev/eventhighlight transcoding@0.0.1
+info installOne transcoding@0.0.1
+info unbuild /Users/julianshen/dev/eventhighlight/node_modules/transcoding
+verbose from cache /Users/julianshen/.npm/transcoding/0.0.1/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm'
+verbose mkdir done: /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/julianshen/dev/eventhighlight/node_modules/transcoding
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/julianshen/.npm/transcoding/0.0.1/package.tgz' ],
+silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm' ]
+silly tar err x package/.npmignore
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/wscript
+silly tar err x package/examples/mediainfo.js
+silly tar err x package/examples/transcode.js
+silly tar err x package/src/binding.cpp
+silly tar err x package/src/io.cpp
+silly tar err x package/src/io.h
+silly tar err x package/src/mediainfo.cpp
+silly tar err x package/src/mediainfo.h
+silly tar err x package/src/profile.cpp
+silly tar err x package/src/profile.h
+silly tar err x package/src/task.cpp
+silly tar err x package/src/task.h
+silly tar err x package/src/taskcontext.cpp
+silly tar err x package/src/taskcontext.h
+silly tar err x package/src/utils.h
+silly tar err x package/lib/transcoding.js
+silly tar err x package/lib/transcoding/binding.js
+silly tar err x package/lib/transcoding/profiles.js
+silly tar exit 0
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/.npmignore
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/package.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/README.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/wscript
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples/mediainfo.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples/transcode.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/binding.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/io.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/io.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/mediainfo.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/mediainfo.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/profile.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/profile.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/task.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/task.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/taskcontext.cpp
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/taskcontext.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/utils.h
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding/binding.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding/profiles.js
+verbose gunzed /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package
+verbose rm'ed /Users/julianshen/dev/eventhighlight/node_modules/transcoding
+verbose renamed [ '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package',
+verbose renamed   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { name: 'transcoding',
+silly testEngine   description: 'Media transcoding and streaming support',
+silly testEngine   version: '0.0.1',
+silly testEngine   author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
+silly testEngine   contributors: [],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/benvanik/node-transcoding.git' },
+silly testEngine   keywords: 
+silly testEngine    [ 'audio',
+silly testEngine      'video',
+silly testEngine      'media',
+silly testEngine      'transcode',
+silly testEngine      'transcoding',
+silly testEngine      'remux',
+silly testEngine      'streaming' ],
+silly testEngine   directories: { lib: './lib/transcoding' },
+silly testEngine   main: './lib/transcoding',
+silly testEngine   bin: { transcode: './examples/transcode.js' },
+silly testEngine   dependencies: { tav: '0.1.0' },
+silly testEngine   scripts: 
+silly testEngine    { preinstall: 'node-waf configure && node-waf build',
+silly testEngine      preuninstall: 'rm -rf build/*' },
+silly testEngine   engines: { node: '>= 0.6.x' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'transcoding@0.0.1',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json
+verbose loadDefaults transcoding@0.0.1
+info preinstall transcoding@0.0.1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf configure && node-waf build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf configure && node-waf build' ],
+silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
+info transcoding@0.0.1 Failed to exec preinstall script
+ERR! error installing transcoding@0.0.1 Error: transcoding@0.0.1 preinstall: `node-waf configure && node-waf build`
+ERR! error installing transcoding@0.0.1 `sh "-c" "node-waf configure && node-waf build"` failed with 1
+ERR! error installing transcoding@0.0.1     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing transcoding@0.0.1     at ChildProcess.emit (events.js:70:17)
+ERR! error installing transcoding@0.0.1     at maybeExit (child_process.js:361:16)
+ERR! error installing transcoding@0.0.1     at Process.onexit (child_process.js:397:5)
+info unbuild /Users/julianshen/dev/eventhighlight/node_modules/transcoding
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json
+info preuninstall transcoding@0.0.1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "rm -rf build/*"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'rm -rf build/*' ],
+silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
+info uninstall transcoding@0.0.1
+verbose unbuild transcoding@0.0.1 [ true,
+verbose unbuild transcoding@0.0.1   '/Users/julianshen/dev/eventhighlight/node_modules',
+verbose unbuild transcoding@0.0.1   '/Users/julianshen/dev/eventhighlight/node_modules' ]
+verbose binRoot [ '/Users/julianshen/dev/eventhighlight/node_modules/.bin',
+verbose binRoot   { transcode: './examples/transcode.js' } ]
+info postuninstall transcoding@0.0.1
+verbose installOne cb transcoding@0.0.1
+ERR! transcoding@0.0.1 preinstall: `node-waf configure && node-waf build`
+ERR! `sh "-c" "node-waf configure && node-waf build"` failed with 1
+ERR! 
+ERR! Failed at the transcoding@0.0.1 preinstall script.
+ERR! This is most likely a problem with the transcoding package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf configure && node-waf build
+ERR! You can get their info via:
+ERR!     npm owner ls transcoding
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "i"
+ERR! cwd /Users/julianshen/dev/eventhighlight
+ERR! node -v v0.6.11
+ERR! npm -v 1.0.106
+ERR! code ELIFECYCLE
+verbose exit [ 1, true ]

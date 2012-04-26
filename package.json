@@ -9,7 +9,8 @@
     "ejs": "",
     "faceplate": "",
     "restler": "",
-    "sax": ""
+    "sax": "",
+    "transcoding": ""
   },
 
   "engines": {

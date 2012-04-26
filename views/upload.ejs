@@ -68,6 +68,7 @@ function upload() {
     if(fileUpload.files && fileUpload.files.length > 0) {
         var file = document.getElementById('upload').files[0];
 
+        console.log(file);
         showProgress(true);
         updateProgress(0);
         formData.append('upload', file);
