@@ -2,10 +2,22 @@ require('ejs');
 var Youtube = require('./youtube').simple;
 var express = require('express');
 
+//Initialize upload folder
+var uploadFolder = __dirname + '/uploads'
+var fs = require('fs');
+
+try {
+    var stat = fs.statSync(uploadFolder);
+} catch(e) {
+    //Assume folder not created
+    fs.mkdirSync(uploadFolder);
+}
+
+//Init server
 var app = express.createServer(
   express.logger(),
   express.static(__dirname + '/public'),
-  express.bodyParser({uploadDir: __dirname + '/uploads'}),
+  express.bodyParser({uploadDir: uploadFolder}),
   express.cookieParser(),
   // set this to a secret value to encrypt session cookies
   express.session({ secret: process.env.SESSION_SECRET || 'mysecret11' }),
@@ -53,6 +65,7 @@ app.get('/upload', function(req, res) {
 app.post('/_upload', function(req, res) {
   res.send('{}');
 });
+
 //For test
 app.get('/__events', function(req, res) {
   req.facebook.get('/me/events', { limit: 4 }, function(events) {

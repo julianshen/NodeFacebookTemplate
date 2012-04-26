@@ -19,18 +19,63 @@
         <input type="file" name="upload" accept="audio/*" id="upload" capture="microphone"/>
     </form>
 </div>
+<div class="progress progress-striped
+     active" style="display: none" id="progressdiv">
+  <div id="progressbar" class="bar"
+       style="width: 0%;"></div>
+</div>
 <button class="btn btn-danger" onclick="sing()">Record</button>
 <button class="btn btn-primary" onclick="upload()">Send</button>
 </div>
+
 <script>
+function onError(error) {
+    alert('Error');
+}
 
 function sing() {
     var fileUpload = document.getElementById('upload');
     fileUpload.click();
 }
 
+function showProgress(show) {
+    var progressdiv = document.getElementById('progressdiv');
+
+    if(show) {
+        progressdiv.style.display = 'block';
+    } else {
+        progressdiv.style.display = 'none';
+    }
+}
+
+function updateProgress(percentage) {
+    var progress = document.getElementById('progressbar');
+    progress.style.width = percentage + '%';
+}
+
+function onProgress(e) {
+    if (e.lengthComputable) {
+        var percentComplete = (e.loaded/e.total)*100;
+        updateProgress(percentComplete);
+    }
+}
+
 function upload() {
-    var singer = document.getElementById('singer');
-    singer.submit();
+    var formData = new FormData();
+    var xhr = new XMLHttpRequest();
+
+    var fileUpload = document.getElementById('upload');
+    if(fileUpload.files && fileUpload.files.length > 0) {
+        var file = document.getElementById('upload').files[0];
+
+        showProgress(true);
+        updateProgress(0);
+        formData.append('upload', file);
+        xhr.open('post', '/_upload', true);
+        xhr.addEventListener('error', onError, false);
+        xhr.addEventListener('progress', onProgress, false);
+        xhr.send(formData);
+        xhr.addEventListener('readystatechange', function(e) {}, false);
+    }
 }
 </script>
