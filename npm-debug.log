@@ -183,7 +183,7 @@ verbose etag "1N694K0ON3SFQI584FVTN8BOV"
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
 silly get cb     etag: '"1N694K0ON3SFQI584FVTN8BOV"',
-silly get cb     date: 'Thu, 26 Apr 2012 09:43:00 GMT',
+silly get cb     date: 'Thu, 26 Apr 2012 09:43:37 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag audiolib from cache
 verbose GET audiolib/0.6.2
@@ -194,7 +194,7 @@ verbose etag "1N694K0ON3SFQI584FVTN8BOV"
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
 silly get cb     etag: '"1N694K0ON3SFQI584FVTN8BOV"',
-silly get cb     date: 'Thu, 26 Apr 2012 09:43:01 GMT',
+silly get cb     date: 'Thu, 26 Apr 2012 09:43:38 GMT',
 silly get cb     'content-length': '0' } ]
 verbose etag audiolib/0.6.2 from cache
 verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0g-v83.6.6.20-darwin-x64-11.3.0',
@@ -405,55 +405,6 @@ silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audio
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/codecs.md
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/effects.md
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/generators.md
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-automation.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-buffer-effect.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-codec.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-effect.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-generator.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-plugin.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-end.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-start.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/adsr.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/stepsequencer.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/uicontrol.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/biquad.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/bitcrusher.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/chorus.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/combfilter.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/compressor.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/convolution.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/delay.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/distortion.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/freeverb.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/gain.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/iirfilter.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/limiter.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/lp12filter.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/noise.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/oscillator.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/sampler.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/audioworker.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/pcmdata.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/sink.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/amplitude.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/audioprocessingunit.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fft.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fourier.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/package.json
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/variables.json
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-end.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-start.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.css
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.html
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.js
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/adsr.html
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/audioworker.html
@@ -485,6 +436,55 @@ silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audio
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples/drum-samples.js
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples/freeverb.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/package.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/variables.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-end.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-start.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.css
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-automation.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-buffer-effect.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-codec.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-effect.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-generator.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-plugin.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-end.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-start.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/adsr.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/stepsequencer.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/uicontrol.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/biquad.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/bitcrusher.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/chorus.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/combfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/compressor.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/convolution.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/delay.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/distortion.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/freeverb.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/gain.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/iirfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/limiter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/lp12filter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/noise.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/oscillator.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/sampler.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/amplitude.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/audioprocessingunit.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fft.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fourier.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/audioworker.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/pcmdata.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/sink.js
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts
 silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts/builder-context.js
