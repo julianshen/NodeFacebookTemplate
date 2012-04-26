@@ -15,7 +15,7 @@ silly testEngine      ejs: '',
 silly testEngine      faceplate: '',
 silly testEngine      restler: '',
 silly testEngine      sax: '',
-silly testEngine      transcoding: '' },
+silly testEngine      audiolib: '' },
 silly testEngine   engines: { node: '0.6.x' },
 silly testEngine   _id: 'eventhighlight@0.0.1',
 silly testEngine   devDependencies: {},
@@ -27,9 +27,25 @@ silly testEngine   scripts: {} }
 verbose caching /Users/julianshen/dev/eventhighlight/package.json
 verbose loadDefaults eventhighlight@0.0.1
 verbose where, deps [ '/Users/julianshen/dev/eventhighlight',
-verbose where, deps   [ 'express', 'ejs', 'faceplate', 'restler', 'sax', 'transcoding' ] ]
+verbose where, deps   [ 'express', 'ejs', 'faceplate', 'restler', 'sax', 'audiolib' ] ]
 verbose from cache /Users/julianshen/dev/eventhighlight/package.json
 info preinstall eventhighlight@0.0.1
+silly testEngine { name: 'ejs',
+silly testEngine   description: 'Embedded JavaScript templates',
+silly testEngine   version: '0.7.1',
+silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly testEngine   keywords: [ 'template', 'engine', 'ejs' ],
+silly testEngine   devDependencies: { mocha: '*' },
+silly testEngine   main: './lib/ejs.js',
+silly testEngine   _id: 'ejs@0.7.1',
+silly testEngine   dependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/ejs/package.json
+verbose loadDefaults ejs@0.7.1
 silly testEngine { name: 'express',
 silly testEngine   description: 'Sinatra inspired web development framework',
 silly testEngine   version: '2.5.9',
@@ -102,22 +118,6 @@ silly testEngine   _nodeVersion: 'v0.6.11',
 silly testEngine   _defaultsLoaded: true }
 verbose caching /Users/julianshen/dev/eventhighlight/node_modules/restler/package.json
 verbose loadDefaults restler@2.0.0
-silly testEngine { name: 'ejs',
-silly testEngine   description: 'Embedded JavaScript templates',
-silly testEngine   version: '0.7.1',
-silly testEngine   author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
-silly testEngine   keywords: [ 'template', 'engine', 'ejs' ],
-silly testEngine   devDependencies: { mocha: '*' },
-silly testEngine   main: './lib/ejs.js',
-silly testEngine   _id: 'ejs@0.7.1',
-silly testEngine   dependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.106',
-silly testEngine   _nodeVersion: 'v0.6.11',
-silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/julianshen/dev/eventhighlight/node_modules/ejs/package.json
-verbose loadDefaults ejs@0.7.1
 silly testEngine { name: 'sax',
 silly testEngine   description: 'An evented streaming XML parser in JavaScript',
 silly testEngine   author: 
@@ -156,260 +156,434 @@ verbose into /Users/julianshen/dev/eventhighlight   'ejs@',
 verbose into /Users/julianshen/dev/eventhighlight   'faceplate@',
 verbose into /Users/julianshen/dev/eventhighlight   'restler@',
 verbose into /Users/julianshen/dev/eventhighlight   'sax@',
-verbose into /Users/julianshen/dev/eventhighlight   'transcoding@' ]
+verbose into /Users/julianshen/dev/eventhighlight   'audiolib@' ]
 verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/ejs/package.json
 verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/express/package.json
 verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/faceplate/package.json
 verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/restler/package.json
 verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/sax/package.json
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping express@
+verbose already installed in /Users/julianshen/dev/eventhighlight skipping ejs@
 verbose already installed in /Users/julianshen/dev/eventhighlight skipping faceplate@
 verbose already installed in /Users/julianshen/dev/eventhighlight skipping restler@
 verbose already installed in /Users/julianshen/dev/eventhighlight skipping sax@
-verbose cache add transcoding@
-verbose cache add [ 'transcoding@', null ]
-silly cache add: name, spec, args [ undefined, 'transcoding@', [ 'transcoding@', null ] ]
-verbose parsed url { pathname: 'transcoding@',
-verbose parsed url   path: 'transcoding@',
-verbose parsed url   href: 'transcoding@' }
-silly cache add: name, spec, args [ 'transcoding', '', [ 'transcoding', '' ] ]
+verbose cache add audiolib@
+verbose cache add [ 'audiolib@', null ]
+silly cache add: name, spec, args [ undefined, 'audiolib@', [ 'audiolib@', null ] ]
+verbose parsed url { pathname: 'audiolib@', path: 'audiolib@', href: 'audiolib@' }
+silly cache add: name, spec, args [ 'audiolib', '', [ 'audiolib', '' ] ]
 verbose parsed url { href: '' }
-info addNamed [ 'transcoding', '' ]
+info addNamed [ 'audiolib', '' ]
 verbose addNamed [ null, '' ]
-verbose already installed in /Users/julianshen/dev/eventhighlight skipping express@
-verbose already installed in /Users/julianshen/dev/eventhighlight skipping ejs@
-verbose GET transcoding
-verbose raw, before any munging transcoding
-verbose url resolving [ 'https://registry.npmjs.org/', './transcoding' ]
-verbose url resolved https://registry.npmjs.org/transcoding
-verbose etag "3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"
+verbose GET audiolib
+verbose raw, before any munging audiolib
+verbose url resolving [ 'https://registry.npmjs.org/', './audiolib' ]
+verbose url resolved https://registry.npmjs.org/audiolib
+verbose etag "1N694K0ON3SFQI584FVTN8BOV"
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-silly get cb     etag: '"3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"',
-silly get cb     date: 'Thu, 26 Apr 2012 09:41:27 GMT',
+silly get cb     etag: '"1N694K0ON3SFQI584FVTN8BOV"',
+silly get cb     date: 'Thu, 26 Apr 2012 09:43:00 GMT',
 silly get cb     'content-length': '0' } ]
-verbose etag transcoding from cache
-verbose GET transcoding/0.0.1
-verbose raw, before any munging transcoding/0.0.1
-verbose url resolving [ 'https://registry.npmjs.org/', './transcoding/0.0.1' ]
-verbose url resolved https://registry.npmjs.org/transcoding/0.0.1
-verbose etag "3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"
+verbose etag audiolib from cache
+verbose GET audiolib/0.6.2
+verbose raw, before any munging audiolib/0.6.2
+verbose url resolving [ 'https://registry.npmjs.org/', './audiolib/0.6.2' ]
+verbose url resolved https://registry.npmjs.org/audiolib/0.6.2
+verbose etag "1N694K0ON3SFQI584FVTN8BOV"
 silly get cb [ 304,
 silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-silly get cb     etag: '"3AETDQ4RBVYXZ1ISTZ4Z2Z6TD"',
-silly get cb     date: 'Thu, 26 Apr 2012 09:41:29 GMT',
+silly get cb     etag: '"1N694K0ON3SFQI584FVTN8BOV"',
+silly get cb     date: 'Thu, 26 Apr 2012 09:43:01 GMT',
 silly get cb     'content-length': '0' } ]
-verbose etag transcoding/0.0.1 from cache
+verbose etag audiolib/0.6.2 from cache
 verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl1.0.0g-v83.6.6.20-darwin-x64-11.3.0',
-verbose bin dist   { shasum: '6ca5818952da67e994cb1b8a00c8cda8d31d792a',
-verbose bin dist     tarball: 'http://registry.npmjs.org/transcoding/-/transcoding-0.0.1.tgz' } ]
-verbose has wscript [ undefined,
-verbose has wscript   { file: '/Users/julianshen/.npm/transcoding/0.0.1/package/package.json',
-verbose has wscript     contributors: false,
-verbose has wscript     serverjs: false,
-verbose has wscript     wscript: true } ]
-silly testEngine { name: 'transcoding',
-silly testEngine   description: 'Media transcoding and streaming support',
-silly testEngine   version: '0.0.1',
-silly testEngine   author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
-silly testEngine   contributors: [],
+verbose bin dist   { shasum: 'e3041483e2092e98ec734b00cd74dde9af9d3e3b',
+verbose bin dist     tarball: 'http://registry.npmjs.org/audiolib/-/audiolib-0.6.2.tgz' } ]
+silly testEngine { name: 'audiolib',
+silly testEngine   author: { name: 'Jussi Kalliokoski' },
+silly testEngine   version: '0.6.2',
+silly testEngine   description: 'audiolib.js is a powerful audio tools library for javascript.',
 silly testEngine   repository: 
 silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/benvanik/node-transcoding.git' },
-silly testEngine   keywords: 
-silly testEngine    [ 'audio',
-silly testEngine      'video',
-silly testEngine      'media',
-silly testEngine      'transcode',
-silly testEngine      'transcoding',
-silly testEngine      'remux',
-silly testEngine      'streaming' ],
-silly testEngine   directories: { lib: './lib/transcoding' },
-silly testEngine   main: './lib/transcoding',
-silly testEngine   bin: { transcode: './examples/transcode.js' },
-silly testEngine   dependencies: { tav: '0.1.0' },
-silly testEngine   scripts: 
-silly testEngine    { preinstall: 'node-waf configure && node-waf build',
-silly testEngine      preuninstall: 'rm -rf build/*' },
-silly testEngine   engines: { node: '>= 0.6.x' },
+silly testEngine      url: 'git://github.com/jussi-kalliokoski/audiolib.js.git' },
+silly testEngine   engines: { node: '>=0.2.0-0' },
+silly testEngine   licenses: [ { type: 'MIT' } ],
+silly testEngine   bugs: { url: 'http://github.com/jussi-kalliokoski/audiolib.js/issues' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   scripts: { preinstall: 'grunt --config Gruntfile.js' },
+silly testEngine   main: './lib/audiolib',
+silly testEngine   _id: 'audiolib@0.6.2',
+silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
-silly testEngine   _id: 'transcoding@0.0.1',
 silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.106',
 silly testEngine   _nodeVersion: 'v0.6.11',
 silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/julianshen/.npm/transcoding/0.0.1/package/package.json
-verbose loadDefaults transcoding@0.0.1
-silly resolved [ { name: 'transcoding',
-silly resolved     description: 'Media transcoding and streaming support',
-silly resolved     version: '0.0.1',
-silly resolved     author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
-silly resolved     contributors: [],
+verbose caching /Users/julianshen/.npm/audiolib/0.6.2/package/package.json
+verbose loadDefaults audiolib@0.6.2
+silly resolved [ { name: 'audiolib',
+silly resolved     author: { name: 'Jussi Kalliokoski' },
+silly resolved     version: '0.6.2',
+silly resolved     description: 'audiolib.js is a powerful audio tools library for javascript.',
 silly resolved     repository: 
 silly resolved      { type: 'git',
-silly resolved        url: 'git://github.com/benvanik/node-transcoding.git' },
-silly resolved     keywords: 
-silly resolved      [ 'audio',
-silly resolved        'video',
-silly resolved        'media',
-silly resolved        'transcode',
-silly resolved        'transcoding',
-silly resolved        'remux',
-silly resolved        'streaming' ],
-silly resolved     directories: { lib: './lib/transcoding' },
-silly resolved     main: './lib/transcoding',
-silly resolved     bin: { transcode: './examples/transcode.js' },
-silly resolved     dependencies: { tav: '0.1.0' },
-silly resolved     scripts: 
-silly resolved      { preinstall: 'node-waf configure && node-waf build',
-silly resolved        preuninstall: 'rm -rf build/*' },
-silly resolved     engines: { node: '>= 0.6.x' },
+silly resolved        url: 'git://github.com/jussi-kalliokoski/audiolib.js.git' },
+silly resolved     engines: { node: '>=0.2.0-0' },
+silly resolved     licenses: [ { type: 'MIT' } ],
+silly resolved     bugs: { url: 'http://github.com/jussi-kalliokoski/audiolib.js/issues' },
+silly resolved     directories: { lib: './lib' },
+silly resolved     scripts: { preinstall: 'grunt --config Gruntfile.js' },
+silly resolved     main: './lib/audiolib',
+silly resolved     _id: 'audiolib@0.6.2',
+silly resolved     dependencies: {},
 silly resolved     devDependencies: {},
-silly resolved     _id: 'transcoding@0.0.1',
 silly resolved     _engineSupported: true,
 silly resolved     _npmVersion: '1.0.106',
 silly resolved     _nodeVersion: 'v0.6.11',
 silly resolved     _defaultsLoaded: true } ]
-info into /Users/julianshen/dev/eventhighlight transcoding@0.0.1
-info installOne transcoding@0.0.1
-info unbuild /Users/julianshen/dev/eventhighlight/node_modules/transcoding
-verbose from cache /Users/julianshen/.npm/transcoding/0.0.1/package/package.json
-verbose mkdir (expected) error ENOENT, no such file or directory '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm'
-verbose mkdir done: /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm 755
+info into /Users/julianshen/dev/eventhighlight audiolib@0.6.2
+info installOne audiolib@0.6.2
+info unbuild /Users/julianshen/dev/eventhighlight/node_modules/audiolib
+verbose from cache /Users/julianshen/.npm/audiolib/0.6.2/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm'
+verbose mkdir done: /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm 755
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /Users/julianshen/dev/eventhighlight/node_modules/transcoding
+verbose unpackTarget /Users/julianshen/dev/eventhighlight/node_modules/audiolib
 silly gunzTarPerm modes [ '755', '644' ]
 silly spawning [ 'tar',
 silly spawning   [ '-zmvxpf',
-silly spawning     '/Users/julianshen/.npm/transcoding/0.0.1/package.tgz' ],
-silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm' ]
+silly spawning     '/Users/julianshen/.npm/audiolib/0.6.2/package.tgz' ],
+silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm' ]
+silly tar err x package/.gitmodules
 silly tar err x package/.npmignore
+silly tar err x package/build
+silly tar err x package/BUILD.md
+silly tar err x package/Gruntfile.js
+silly tar err x package/INSTALL.md
+silly tar err x package/Makefile
 silly tar err x package/package.json
 silly tar err x package/README.md
-silly tar err x package/wscript
-silly tar err x package/examples/mediainfo.js
-silly tar err x package/examples/transcode.js
-silly tar err x package/src/binding.cpp
-silly tar err x package/src/io.cpp
-silly tar err x package/src/io.h
-silly tar err x package/src/mediainfo.cpp
-silly tar err x package/src/mediainfo.h
-silly tar err x package/src/profile.cpp
-silly tar err x package/src/profile.h
-silly tar err x package/src/task.cpp
-silly tar err x package/src/task.h
-silly tar err x package/src/taskcontext.cpp
-silly tar err x package/src/taskcontext.h
-silly tar err x package/src/utils.h
-silly tar err x package/lib/transcoding.js
-silly tar err x package/lib/transcoding/binding.js
-silly tar err x package/lib/transcoding/profiles.js
+silly tar err x package/plugins/audioscheduler.js
+silly tar err x package/plugins/capper.js
+silly tar err x package/plugins/empty.js
+silly tar err x package/plugins/expo.js
+silly tar err x package/plugins/fastlowpassfilter.js
+silly tar err x package/plugins/granular-sampler.js
+silly tar err x package/plugins/loop-sequencer.js
+silly tar err x package/plugins/midieventtracker.js
+silly tar err x package/plugins/n-sampleallpassfilter.js
+silly tar err x package/plugins/pluck.js
+silly tar err x package/specs/codecs.md
+silly tar err x package/specs/effects.md
+silly tar err x package/specs/generators.md
+silly tar err x package/src/api-automation.js
+silly tar err x package/src/api-buffer-effect.js
+silly tar err x package/src/api-codec.js
+silly tar err x package/src/api-effect.js
+silly tar err x package/src/api-generator.js
+silly tar err x package/src/api-plugin.js
+silly tar err x package/src/wrapper-end.js
+silly tar err x package/src/wrapper-start.js
+silly tar err x package/src/controls/adsr.js
+silly tar err x package/src/controls/stepsequencer.js
+silly tar err x package/src/controls/uicontrol.js
+silly tar err x package/src/effects/biquad.js
+silly tar err x package/src/effects/bitcrusher.js
+silly tar err x package/src/effects/chorus.js
+silly tar err x package/src/effects/combfilter.js
+silly tar err x package/src/effects/compressor.js
+silly tar err x package/src/effects/convolution.js
+silly tar err x package/src/effects/delay.js
+silly tar err x package/src/effects/distortion.js
+silly tar err x package/src/effects/freeverb.js
+silly tar err x package/src/effects/gain.js
+silly tar err x package/src/effects/iirfilter.js
+silly tar err x package/src/effects/limiter.js
+silly tar err x package/src/effects/lp12filter.js
+silly tar err x package/src/generators/noise.js
+silly tar err x package/src/generators/oscillator.js
+silly tar err x package/src/generators/sampler.js
+silly tar err x package/src/io/audioworker.js
+silly tar err x package/src/io/pcmdata.js
+silly tar err x package/src/io/sink.js
+silly tar err x package/src/processors/amplitude.js
+silly tar err x package/src/processors/audioprocessingunit.js
+silly tar err x package/src/processors/fft.js
+silly tar err x package/src/processors/fourier.js
+silly tar err x package/tests/adsr.html
+silly tar err x package/tests/audioworker.html
+silly tar err x package/tests/automation.html
+silly tar err x package/tests/backgroundwork.html
+silly tar err x package/tests/biquad.html
+silly tar err x package/tests/bitcrusher.html
+silly tar err x package/tests/bufferbased.html
+silly tar err x package/tests/buffergenerators.html
+silly tar err x package/tests/compressor.html
+silly tar err x package/tests/convolution.html
+silly tar err x package/tests/distortion.html
+silly tar err x package/tests/drum-sampler.html
+silly tar err x package/tests/fft.html
+silly tar err x package/tests/granular-sampler.html
+silly tar err x package/tests/limiter.html
+silly tar err x package/tests/loop-sequencer.html
+silly tar err x package/tests/node-record.js
+silly tar err x package/tests/noise.html
+silly tar err x package/tests/nonscheduling.html
+silly tar err x package/tests/osc.html
+silly tar err x package/tests/pluck.htm
+silly tar err x package/tests/preprocessing.html
+silly tar err x package/tests/record.html
+silly tar err x package/tests/reverb.html
+silly tar err x package/tests/sampler.html
+silly tar err x package/tests/scheduling.html
+silly tar err x package/tests/stepsequencer.html
+silly tar err x package/tests/samples/drum-samples.js
+silly tar err x package/tests/samples/freeverb.js
+silly tar err x package/templates/package.json
+silly tar err x package/templates/variables.json
+silly tar err x package/templates/wrapper-end.js
+silly tar err x package/templates/wrapper-start.js
+silly tar err x package/templates/docs/docs.css
+silly tar err x package/templates/docs/docs.html
+silly tar err x package/templates/docs/docs.js
+silly tar err x package/dependencies/build-scripts/builder-context.js
+silly tar err x package/dependencies/build-scripts/get-minifiers.js
+silly tar err x package/dependencies/build-scripts/index.js
+silly tar err x package/dependencies/sink.js/.npmignore
+silly tar err x package/dependencies/sink.js/build
+silly tar err x package/dependencies/sink.js/Makefile
+silly tar err x package/dependencies/sink.js/README.md
+silly tar err x package/dependencies/sink.js/tests/callback.html
+silly tar err x package/dependencies/sink.js/tests/deinterleaved.html
+silly tar err x package/dependencies/sink.js/tests/events.html
+silly tar err x package/dependencies/sink.js/tests/inlineworker.html
+silly tar err x package/dependencies/sink.js/tests/proxy.html
+silly tar err x package/dependencies/sink.js/tests/ringbuffer.html
+silly tar err x package/dependencies/sink.js/tests/singleton.html
+silly tar err x package/dependencies/sink.js/tests/wav.html
+silly tar err x package/dependencies/sink.js/tests/write.html
+silly tar err x package/dependencies/sink.js/src/event-emitter.js
+silly tar err x package/dependencies/sink.js/src/main.js
+silly tar err x package/dependencies/sink.js/src/core/do-interval.js
+silly tar err x package/dependencies/sink.js/src/core/error.js
+silly tar err x package/dependencies/sink.js/src/core/inline-worker.js
+silly tar err x package/dependencies/sink.js/src/extra/recording.js
+silly tar err x package/dependencies/sink.js/src/extra/ring-buffer.js
+silly tar err x package/dependencies/sink.js/src/extra/write-buffers.js
+silly tar err x package/dependencies/sink.js/src/sinks/audio-data-api.js
+silly tar err x package/dependencies/sink.js/src/sinks/dummy.js
+silly tar err x package/dependencies/sink.js/src/sinks/wav-data-uri.js
+silly tar err x package/dependencies/sink.js/src/sinks/web-audio-api.js
+silly tar err x package/dependencies/sink.js/src/sinks/workers.js
+silly tar err x package/dependencies/sink.js/src/utils/buffer-management.js
+silly tar err x package/dependencies/sink.js/src/utils/proxy.js
+silly tar err x package/dependencies/sink.js/src/utils/resample.js
 silly tar exit 0
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/.npmignore
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/package.json
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/README.md
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/wscript
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples/mediainfo.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/examples/transcode.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/binding.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/io.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/io.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/mediainfo.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/mediainfo.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/profile.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/profile.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/task.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/task.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/taskcontext.cpp
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/taskcontext.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/src/utils.h
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding/binding.js
-silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package/lib/transcoding/profiles.js
-verbose gunzed /Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package
-verbose rm'ed /Users/julianshen/dev/eventhighlight/node_modules/transcoding
-verbose renamed [ '/Users/julianshen/dev/eventhighlight/node_modules/___transcoding.npm/package',
-verbose renamed   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
-verbose has wscript [ undefined,
-verbose has wscript   { file: '/Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json',
-verbose has wscript     contributors: false,
-verbose has wscript     serverjs: false,
-verbose has wscript     wscript: true } ]
-silly testEngine { name: 'transcoding',
-silly testEngine   description: 'Media transcoding and streaming support',
-silly testEngine   version: '0.0.1',
-silly testEngine   author: { name: 'Ben Vanik', email: 'ben.vanik@gmail.com' },
-silly testEngine   contributors: [],
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/.gitmodules
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/.npmignore
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/build
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/BUILD.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/Gruntfile.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/INSTALL.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/Makefile
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/package.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/README.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/audioscheduler.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/capper.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/empty.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/expo.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/fastlowpassfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/granular-sampler.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/loop-sequencer.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/midieventtracker.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/n-sampleallpassfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/plugins/pluck.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/codecs.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/effects.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/specs/generators.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-automation.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-buffer-effect.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-codec.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-effect.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-generator.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/api-plugin.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-end.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/wrapper-start.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/adsr.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/stepsequencer.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/controls/uicontrol.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/biquad.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/bitcrusher.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/chorus.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/combfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/compressor.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/convolution.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/delay.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/distortion.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/freeverb.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/gain.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/iirfilter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/limiter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/effects/lp12filter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/noise.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/oscillator.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/generators/sampler.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/audioworker.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/pcmdata.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/io/sink.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/amplitude.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/audioprocessingunit.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fft.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/src/processors/fourier.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/package.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/variables.json
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-end.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/wrapper-start.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.css
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/templates/docs/docs.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/adsr.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/audioworker.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/automation.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/backgroundwork.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/biquad.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/bitcrusher.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/bufferbased.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/buffergenerators.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/compressor.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/convolution.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/distortion.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/drum-sampler.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/fft.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/granular-sampler.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/limiter.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/loop-sequencer.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/node-record.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/noise.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/nonscheduling.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/osc.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/pluck.htm
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/preprocessing.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/record.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/reverb.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/sampler.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/scheduling.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/stepsequencer.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples/drum-samples.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/tests/samples/freeverb.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts/builder-context.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts/get-minifiers.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/build-scripts/index.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/.npmignore
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/build
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/Makefile
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/README.md
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/callback.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/deinterleaved.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/events.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/inlineworker.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/proxy.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/ringbuffer.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/singleton.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/wav.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/tests/write.html
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/event-emitter.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/main.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/core
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/core/do-interval.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/core/error.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/core/inline-worker.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/extra
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/extra/recording.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/extra/ring-buffer.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/extra/write-buffers.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks/audio-data-api.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks/dummy.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks/wav-data-uri.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks/web-audio-api.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/sinks/workers.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/utils
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/utils/buffer-management.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/utils/proxy.js
+silly asyncMap in gTP /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package/dependencies/sink.js/src/utils/resample.js
+verbose gunzed /Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package
+verbose rm'ed /Users/julianshen/dev/eventhighlight/node_modules/audiolib
+verbose renamed [ '/Users/julianshen/dev/eventhighlight/node_modules/___audiolib.npm/package',
+verbose renamed   '/Users/julianshen/dev/eventhighlight/node_modules/audiolib' ]
+silly testEngine { name: 'audiolib',
+silly testEngine   author: { name: 'Jussi Kalliokoski' },
+silly testEngine   version: '0.6.2',
+silly testEngine   description: 'audiolib.js is a powerful audio tools library for javascript.',
 silly testEngine   repository: 
 silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/benvanik/node-transcoding.git' },
-silly testEngine   keywords: 
-silly testEngine    [ 'audio',
-silly testEngine      'video',
-silly testEngine      'media',
-silly testEngine      'transcode',
-silly testEngine      'transcoding',
-silly testEngine      'remux',
-silly testEngine      'streaming' ],
-silly testEngine   directories: { lib: './lib/transcoding' },
-silly testEngine   main: './lib/transcoding',
-silly testEngine   bin: { transcode: './examples/transcode.js' },
-silly testEngine   dependencies: { tav: '0.1.0' },
-silly testEngine   scripts: 
-silly testEngine    { preinstall: 'node-waf configure && node-waf build',
-silly testEngine      preuninstall: 'rm -rf build/*' },
-silly testEngine   engines: { node: '>= 0.6.x' },
+silly testEngine      url: 'git://github.com/jussi-kalliokoski/audiolib.js.git' },
+silly testEngine   engines: { node: '>=0.2.0-0' },
+silly testEngine   licenses: [ { type: 'MIT' } ],
+silly testEngine   bugs: { url: 'http://github.com/jussi-kalliokoski/audiolib.js/issues' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   scripts: { preinstall: 'grunt --config Gruntfile.js' },
+silly testEngine   main: './lib/audiolib',
+silly testEngine   _id: 'audiolib@0.6.2',
+silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
-silly testEngine   _id: 'transcoding@0.0.1',
 silly testEngine   _engineSupported: true,
 silly testEngine   _npmVersion: '1.0.106',
 silly testEngine   _nodeVersion: 'v0.6.11',
 silly testEngine   _defaultsLoaded: true }
-verbose caching /Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json
-verbose loadDefaults transcoding@0.0.1
-info preinstall transcoding@0.0.1
+verbose caching /Users/julianshen/dev/eventhighlight/node_modules/audiolib/package.json
+verbose loadDefaults audiolib@0.6.2
+info preinstall audiolib@0.6.2
 verbose unsafe-perm in lifecycle true
-silly exec sh "-c" "node-waf configure && node-waf build"
+silly exec sh "-c" "grunt --config Gruntfile.js"
 silly spawning [ 'sh',
-silly spawning   [ '-c', 'node-waf configure && node-waf build' ],
-silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
-info transcoding@0.0.1 Failed to exec preinstall script
-ERR! error installing transcoding@0.0.1 Error: transcoding@0.0.1 preinstall: `node-waf configure && node-waf build`
-ERR! error installing transcoding@0.0.1 `sh "-c" "node-waf configure && node-waf build"` failed with 1
-ERR! error installing transcoding@0.0.1     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
-ERR! error installing transcoding@0.0.1     at ChildProcess.emit (events.js:70:17)
-ERR! error installing transcoding@0.0.1     at maybeExit (child_process.js:361:16)
-ERR! error installing transcoding@0.0.1     at Process.onexit (child_process.js:397:5)
-info unbuild /Users/julianshen/dev/eventhighlight/node_modules/transcoding
-verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/transcoding/package.json
-info preuninstall transcoding@0.0.1
-verbose unsafe-perm in lifecycle true
-silly exec sh "-c" "rm -rf build/*"
-silly spawning [ 'sh',
-silly spawning   [ '-c', 'rm -rf build/*' ],
-silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/transcoding' ]
-info uninstall transcoding@0.0.1
-verbose unbuild transcoding@0.0.1 [ true,
-verbose unbuild transcoding@0.0.1   '/Users/julianshen/dev/eventhighlight/node_modules',
-verbose unbuild transcoding@0.0.1   '/Users/julianshen/dev/eventhighlight/node_modules' ]
-verbose binRoot [ '/Users/julianshen/dev/eventhighlight/node_modules/.bin',
-verbose binRoot   { transcode: './examples/transcode.js' } ]
-info postuninstall transcoding@0.0.1
-verbose installOne cb transcoding@0.0.1
-ERR! transcoding@0.0.1 preinstall: `node-waf configure && node-waf build`
-ERR! `sh "-c" "node-waf configure && node-waf build"` failed with 1
+silly spawning   [ '-c', 'grunt --config Gruntfile.js' ],
+silly spawning   '/Users/julianshen/dev/eventhighlight/node_modules/audiolib' ]
+info audiolib@0.6.2 Failed to exec preinstall script
+ERR! error installing audiolib@0.6.2 Error: audiolib@0.6.2 preinstall: `grunt --config Gruntfile.js`
+ERR! error installing audiolib@0.6.2 `sh "-c" "grunt --config Gruntfile.js"` failed with 127
+ERR! error installing audiolib@0.6.2     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:49:20)
+ERR! error installing audiolib@0.6.2     at ChildProcess.emit (events.js:70:17)
+ERR! error installing audiolib@0.6.2     at maybeExit (child_process.js:361:16)
+ERR! error installing audiolib@0.6.2     at Process.onexit (child_process.js:397:5)
+info unbuild /Users/julianshen/dev/eventhighlight/node_modules/audiolib
+verbose from cache /Users/julianshen/dev/eventhighlight/node_modules/audiolib/package.json
+info preuninstall audiolib@0.6.2
+info uninstall audiolib@0.6.2
+verbose unbuild audiolib@0.6.2 [ true,
+verbose unbuild audiolib@0.6.2   '/Users/julianshen/dev/eventhighlight/node_modules',
+verbose unbuild audiolib@0.6.2   '/Users/julianshen/dev/eventhighlight/node_modules' ]
+info postuninstall audiolib@0.6.2
+verbose installOne cb audiolib@0.6.2
+ERR! audiolib@0.6.2 preinstall: `grunt --config Gruntfile.js`
+ERR! `sh "-c" "grunt --config Gruntfile.js"` failed with 127
 ERR! 
-ERR! Failed at the transcoding@0.0.1 preinstall script.
-ERR! This is most likely a problem with the transcoding package,
+ERR! Failed at the audiolib@0.6.2 preinstall script.
+ERR! This is most likely a problem with the audiolib package,
 ERR! not with npm itself.
 ERR! Tell the author that this fails on your system:
-ERR!     node-waf configure && node-waf build
+ERR!     grunt --config Gruntfile.js
 ERR! You can get their info via:
-ERR!     npm owner ls transcoding
+ERR!     npm owner ls audiolib
 ERR! There is likely additional logging output above.
 ERR! 
 ERR! System Darwin 11.3.0
