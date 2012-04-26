@@ -63,7 +63,11 @@ app.get('/upload', function(req, res) {
 });
 
 app.post('/_upload', function(req, res) {
-  res.send('{}');
+    if(req.files.upload) {
+        //TODO: add file info to database?
+    }
+
+    res.send('{}');
 });
 
 //For test
