@@ -1,4 +1,4 @@
-require('ejs');
+var cons = require('consolidate');
 var Youtube = require('./youtube').simple;
 var express = require('express');
 
@@ -14,29 +14,30 @@ try {
 }
 
 //Init server
-var app = express.createServer(
-  express.logger(),
-  express.static(__dirname + '/public'),
-  express.bodyParser({uploadDir: uploadFolder}),
-  express.cookieParser(),
+var app = express();
+app.use(express.logger());
+app.use(express.static(__dirname + '/public'));
+app.use(express.bodyParser({uploadDir: uploadFolder}));
+app.use(express.cookieParser());
   // set this to a secret value to encrypt session cookies
-  express.session({ secret: process.env.SESSION_SECRET || 'mysecret11' }),
-  require('faceplate').middleware({
+app.use(express.session({ secret: process.env.SESSION_SECRET || 'mysecret11' }));
+app.use(require('faceplate').middleware({
     app_id: process.env.FACEBOOK_APPID,
     secret: process.env.FACEBOOK_SECRET
   })
 );
 
 
+// assign the swig engine to .ejs files
+app.engine('ejs', cons.qejs);
 app.set('view engine', 'ejs');
-
+app.set('views', __dirname + '/views');
 
 //Routing
 //Index
 app.get('/', function(req,res) {
   Youtube.videos({author: 'SonyPictures', q:'trailer'},function(data) {
       res.render('index.ejs', {
-        layout:    'layouts/facebook_common.ejs',
         req:       req,
         app:       app,
         trailers:  data
@@ -56,7 +57,6 @@ app.get('/_channel', function(req, res) {
 //File upload
 app.get('/upload', function(req, res) {
   res.render('upload.ejs', {
-        layout:    'layouts/facebook_common_mobile.ejs',
         req:       req,
         app:       app,
       });

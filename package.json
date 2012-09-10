@@ -6,12 +6,13 @@
 
   "dependencies": {
     "express":   "",
-    "ejs": "",
+    "qejs": "",
     "faceplate": "",
     "restler": "",
     "sax": "",
     "restify": "",
-    "mongoose": ""
+    "mongoose": "",
+    "consolidate": ""
   },
 
   "engines": {
