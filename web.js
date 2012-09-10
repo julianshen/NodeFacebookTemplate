@@ -36,13 +36,18 @@ app.set('views', __dirname + '/views');
 //Routing
 //Index
 app.get('/', function(req,res) {
-  Youtube.videos({author: 'SonyPictures', q:'trailer'},function(data) {
+/*  Youtube.videos({author: 'SonyPictures', q:'trailer'},function(data) {
       res.render('index.ejs', {
         req:       req,
         app:       app,
         trailers:  data
       });
   });
+*/
+    res.render('index2.ejs', {
+        req: req,
+        app: app,
+    });
 });
 
 //Facebook channel files
