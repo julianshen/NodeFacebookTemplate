@@ -60,7 +60,7 @@
           if(FB) {
                   FB.login(function(response) {
                            // handle the response
-                  }, {scope: 'offline_access' });
+                  }, {scope: '<%= req.facebook.plate.options.scope %>' });
           }
   }
 </script>
