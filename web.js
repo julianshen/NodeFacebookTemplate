@@ -23,7 +23,7 @@ app.use(express.cookieParser());
 app.use(express.session({ secret: process.env.SESSION_SECRET || 'mysecret11' }));
 app.use(require('faceplate').middleware({
     app_id: process.env.FACEBOOK_APPID,
-    secret: process.env.FACEBOOK_SECRET
+    secret: process.env.FACEBOOK_SECRET,
     scope: 'user_activities,user_checkins,user_likes,user_photos,user_status,read_stream,publish_checkins,publish_stream,publish_actions'
  
   })
